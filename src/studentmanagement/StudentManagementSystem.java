@@ -83,7 +83,7 @@ public class StudentManagementSystem {
             Connection con=  DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/studentdb",
                     "root",
-                    "Sumit@2607"
+                    "******"
             );
 
            PreparedStatement ps= con.prepareStatement("Insert into student values(?,?,?,?)");
@@ -104,7 +104,7 @@ public class StudentManagementSystem {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/studentdb",
                     "root",
-                    "Sumit@2607"
+                    "******"
             );
 
             PreparedStatement ps = con.prepareStatement("select * from student");
@@ -131,7 +131,7 @@ public class StudentManagementSystem {
             Connection con=DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/studentdb",
                     "root",
-                    "Sumit@2607");
+                    "********");
 
             PreparedStatement ps=con.prepareStatement("select * from student where id = ?");
             ps.setInt(1,id);
@@ -164,7 +164,7 @@ public class StudentManagementSystem {
            Connection con = DriverManager.getConnection(
                    "jdbc:mysql://localhost:3306/studentdb",
                    "root",
-                   "Sumit@2607");
+                   "******");
 
            PreparedStatement ps = con.prepareStatement("update student set city = ? where id = ?");
            ps.setString(1,ci);
@@ -185,7 +185,7 @@ public class StudentManagementSystem {
        Connection con = DriverManager.getConnection(
                "jdbc:mysql://localhost:3306/studentdb",
                "root",
-               "Sumit@2607");
+               "*****");
 
        PreparedStatement ps = con.prepareStatement("delete from student where id = ?");
        ps.setInt(1,id);
